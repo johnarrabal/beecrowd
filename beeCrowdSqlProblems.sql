@@ -1,10 +1,3 @@
--- Your company is doing a survey of how many customers are registered in the states, however, lacked to raise the data of the state of the 'Rio Grande do Sul'.
---Then, you must show the names of all customers whose state is 'RS'.
---SQL CODE
---- URI Online Judge SQL
---- Copyright URI Online Judge
---- www.urionlinejudge.com.br
---- Problem 2602
 
 CREATE TABLE customers (
   id NUMERIC PRIMARY KEY,
@@ -26,5 +19,17 @@ VALUES
   /*  Execute this query to drop the tables */
   -- DROP TABLE customers; --
 
--- RESOLUÇÃO --
+-- Your company is doing a survey of how many customers are registered in the states, however, lacked to raise the data of the state of the 'Rio Grande do Sul'.
+--Then, you must show the names of all customers whose state is 'RS'.
+--SQL CODE
+--- URI Online Judge SQL
+--- Copyright URI Online Judge
+--- www.urionlinejudge.com.br
+--- Problem 2602
+-- RESOLUTION --
 SELECT name FROM customers WHERE state = 'RS';
+
+-- The company will make an event celebrating the 20th anniversary of the market, and for that we will make a great celebration in the city of Porto Alegre. We also invite all our customers who are enrolled in this city.
+-- Your job is in having the names and addresses of customers who live in 'Porto Alegre', to deliver the invitations personally.
+-- RESOLUTION --
+SELECT name, street FROM customers WHERE city = 'Porto Alegre';
